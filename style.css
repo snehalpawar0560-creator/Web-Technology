@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #1a0a5e, #5a4bcf);
+}
+.card{
+    background:#e6e6f7;
+    width:360px;
+    padding:50px 28px 25px;
+    border-radius:22px;
+    text-align:center;
+    position:relative;
+    box-shadow:0 20px 50px rgba(0,0,0,0.4);
+}
+.icon{
+    width:75px;
+    height:75px;
+    background: linear-gradient(135deg, #8a5cf5, #5a7cf5);
+    color:white;
+    font-size:36px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    top:-35px;
+    left:50%;
+    transform:translateX(-50%);
+    border:5px solid #e6e6f7;
+}
+.card h1{color:#1a1a3a; font-size:26px; margin-top:10px;}
+.card p{color:#666; margin:6px 0 22px;}
+.input-box{
+    background:#f5f5ff;
+    border:1px solid #c9c9e8;
+    display:flex;
+    align-items:center;
+    padding:0 12px;
+    border-radius:12px;
+    margin:12px 0;
+}
+.input-box input{
+    border:none;
+    outline:none;
+    background:transparent;
+    padding:13px;
+    width:100%;
+}
+.options{
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    margin:12px 2px;
+}
+.options a{color:#5a4bcf; text-decoration:none;}
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    background: linear-gradient(90deg, #8a5cf5, #5a7cf5);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:8px;
+}
+#msg{
+    margin-top:15px;
+    padding:11px;
+    border-radius:8px;
+    display:none;
+    font-weight:bold;
+    font-size:14px;
+}
+.signup{margin-top:18px; font-size:14px;}
+.signup b{color:#5a4bcf; cursor:pointer;}
