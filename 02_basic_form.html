@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic HTML Form Tags</title>
+</head>
+<body>
+
+    <h1>Basic Registration Form Demonstration</h1>
+    <p>This page demonstrates common HTML form elements for collecting user input.</p>
+
+    <form action="/submit-data" method="post">
+        
+        <fieldset>
+            <legend>Account Information</legend>
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="full_name" required>
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email_address" placeholder="e.g., user@example.com" required>
+            <br><br>
+
+            <label for="password">Choose Password:</label>
+            <input type="password" id="password" name="user_password" minlength="8" required>
+            <br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferences and Details</legend>
+
+            <p><strong>Select Your Gender:</strong></p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <p><strong>Subscribe to Newsletters:</strong></p>
+            <input type="checkbox" id="news_tech" name="newsletter" value="tech" checked>
+            <label for="news_tech">Technology News</label>
+            <br>
+            <input type="checkbox" id="news_prod" name="newsletter" value="product">
+            <label for="news_prod">Product Updates</label>
+            <br><br>
+
+            <label for="city">Select City:</label>
+            <select id="city" name="city_selection">
+                <option value="csn">Chh Sambhajinagar</option>
+                <option value="pune">Pune</option>
+                <option value="bom">Mumbai</option>
+                <option value="other" selected>Other</option>
+            </select>
+            <br><br>
+
+            <label for="comments">Comments (Optional):</label><br>
+            <textarea id="comments" name="user_comments" rows="4" cols="50" placeholder="Enter any special requests here..."></textarea>
+            <br><br>
+            
+        </fieldset>
+        
+        <hr>
+
+        <input type="submit" value="Register Now">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Basic Form Demo</p>
+    </footer>
+
+</body>
+</html>
