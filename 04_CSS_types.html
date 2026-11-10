@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Application Methods</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* This style targets the main container using its ID */
+        #internal-section {
+            background-color: #e0f7fa; /* Light cyan background */
+            padding: 20px;
+            border: 2px solid #00bcd4; /* Cyan border */
+            margin-bottom: 20px;
+        }
+
+        /* This style targets all <h2> elements */
+        h2 {
+            color: #00838f; /* Dark teal text */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: white; background-color: #c2185b; padding: 10px; border-radius: 5px;">
+        Inline CSS Example
+    </h1>
+    <p style="font-size: 18px; font-style: italic;">
+        This paragraph is styled using the `style` attribute directly on the tag.
+        Inline styles have the highest specificity and will override other methods.
+    </p>
+
+    <hr>
+
+    <div id="internal-section">
+        <h2>Internal CSS Example</h2>
+        <p>
+            This section, including the border and background color, is styled using <strong>Internal CSS</strong> defined in the head section's style block.
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="external-section">
+        <h2>External CSS Example</h2>
+        <p>
+            This text and the surrounding container (class="external-section") are styled by linking to the separate `styles.css` file.
+        </p>
+        <p class="special-text">
+            This paragraph has an additional class to show another style from the external sheet.
+        </p>
+    </div>
+
+</body>
+</html>
