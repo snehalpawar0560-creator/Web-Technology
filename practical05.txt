@@ -1,0 +1,32 @@
+Practical No: 05
+Title: Installation of Node.js and Execution of JS file
+
+Aim: To write procedure to install Node.js and run .js file from command line.
+
+Procedure to Install Node.js:
+
+1. Open browser and go to https://nodejs.org/
+2. Click on LTS version Download (for Windows 64-bit)
+3. After download, double click on .msi setup file
+4. Click Next -> Accept Agreement -> Next -> Install -> Finish
+5. Now open CMD (Command Prompt)
+6. Type: node -v  (to check version)
+7. Type: npm -v  (to check npm version)
+If version shows, installation is successful.
+
+Procedure to Run .js file:
+
+1. Create a new file named hello.js
+2. Write below code inside it:
+   console.log("Hello World");
+   var a = 10;
+   var b = 20;
+   console.log(a + b);
+
+3. Save file on Desktop
+4. Open CMD and go to Desktop: cd Desktop
+5. Run command: node hello.js
+
+Output:
+Hello World
+30
